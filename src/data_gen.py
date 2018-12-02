@@ -6,10 +6,10 @@
 
 import numpy as np
 import csv
-inputfile1=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/users.txt'
-inputfile2=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/netflix_train.txt'
-#inputfile3=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/netflix_test.txt'
-outputfile=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/trainSet.csv'
+inputfile1=r'E:\DataAnalysis2\dataset\users.txt'
+inputfile2=r'E:\DataAnalysis2\dataset\netflix_train.txt'
+#inputfile3=r'E:\DataAnalysis2\dataset\netflix_test.txt'
+outputfile=r'E:\DataAnalysis2\dataset\trainSet.csv'
 def data_gen():
     data_all=[]
 
@@ -17,7 +17,7 @@ def data_gen():
         users=csv.reader(inp1,delimiter=' ', quotechar='|')
         data2 = csv.reader(inp2, delimiter=' ', quotechar='|')
         writer=csv.writer(out)
-        dataTrain = []
+        #dataTrain = []
         #for line in data2:
             #dataTrain.append(line)
         #print(dataTrain)

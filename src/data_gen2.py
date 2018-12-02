@@ -6,10 +6,10 @@
 
 import numpy as np
 import csv
-inputfile1=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/users.txt'
-#inputfile2=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/netflix_train.txt'
-inputfile3=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/netflix_test.txt'
-outputfile=r'/Users/tianyu/PycharmProjects/DataAnalysis2/dataset/testSet.csv'
+inputfile1=r'E:\DataAnalysis2\dataset\users.txt'
+#inputfile2=r'E:\DataAnalysis2\dataset\netflix_train.txt'
+inputfile3=r'E:\DataAnalysis2\dataset\netflix_test.txt'
+outputfile=r'E:\DataAnalysis2\dataset\testSet.csv'
 def data_gen():
     data_all=[]
 
@@ -32,11 +32,11 @@ def data_gen():
                 if user[0]==dat[0]:
                     col=int(dat[1])
                     oneUser_data[col-1]=int(dat[2])
-                    dataTrain.remove(dat)
+                    #dataTrain.remove(dat)
                     len += 1
             writer.writerow(oneUser_data)
             data_all.append(oneUser_data)
-
+            print(len)
     print(len)
 
 if __name__=='__main__':
