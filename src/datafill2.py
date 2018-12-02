@@ -7,7 +7,7 @@ import csv
 inputFile=r'E:\DataAnalysis2\dataset\testSet.csv'
 outputFile=r'E:\DataAnalysis2\dataset\testSet2.csv'
 def datafill():
-    with open(inputFile,'r') as inp1,open(outputFile,'w') as out1:
+    with open(inputFile,'r') as inp1,open(outputFile,'w',newline='') as out1:
         rows=csv.reader(inp1)
 
         writer=csv.writer(out1)
