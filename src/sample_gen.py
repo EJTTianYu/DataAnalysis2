@@ -1,8 +1,8 @@
 #coding=utf-8
 
 import csv
-inputFile=r'E:\DataAnalysis2\dataset\trainSet2.csv'
-outputFile=r'E:\DataAnalysis2\dataset\trainSample.csv'
+inputFile=r'E:\DataAnalysis2\dataset\testSet2.csv'
+outputFile=r'E:\DataAnalysis2\dataset\testSample.csv'
 def sapmle_gen():
     with open(inputFile,'r') as inp1,open(outputFile,'w',newline='') as out1:
         lines=csv.reader(inp1)
@@ -15,6 +15,7 @@ def sapmle_gen():
                 break
             writer.writerow(data)
             i-=1
-sapmle_gen()
+if __name__=='__main__':
+    sapmle_gen()
 
 
