@@ -55,6 +55,7 @@ def colla_filter(dataMat):
                             dataMat[i][j] =round(sum_score / sum_sim)
             else:
                 pass
+        #print(i)
     return dataMat
 '''
 #在这里，把RMSE定位到一个用户

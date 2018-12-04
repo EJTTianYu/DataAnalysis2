@@ -4,7 +4,7 @@
 '''
 import numpy as np
 if __name__=='__main__':
-    data=[[1,1],[1,1]]
+    data=[[1,1,1],[1,1,1]]
     A=np.array(data)
     B=np.array(data)
-    print(A*B)
+    print(np.dot(A,B.T))
