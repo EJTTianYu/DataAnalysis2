@@ -73,7 +73,6 @@ if __name__=='__main__':
         writer=csv.writer(out1)
         for t in ts:
             writer.writerow(t)
-
     print(ts)
     #i,j,ts=colla_filter(1,1)
     #print(RMSE(i,j,ts))
